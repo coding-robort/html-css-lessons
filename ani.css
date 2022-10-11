@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+}
+
+.img {
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.AB {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.DA {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.pass {
+    padding: 20px;
+}
