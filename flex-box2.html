@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox example</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .main-box {
+            background-color: rgb(41, 41, 41);
+            color: white;
+            padding: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        i {
+            color: rgb(207, 203, 203);
+        }
+
+        .main-box .first-box,
+        .main-box .second-box {
+            display: flex;
+        }
+
+        .main-box .first-box div,
+        .main-box .second-box div {
+            padding: 5px 10px;
+            background-color: rgb(100, 100, 100);
+            gap: 10px;
+            margin: 10px;
+            display: flex;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .main-box .first-box div:hover,
+        .main-box .second-box div:hover {
+            transform: scale(1.1);
+        }
+
+        .main-box .first-box div p,
+        .main-box .second-box div p {
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-box">
+
+        <div class="first-box">
+            <div class="fb-box">
+                <i class='bx bxl-facebook-circle bx-sm'></i>
+                <p>facebook</p>
+            </div>
+            <div class="twitter-box">
+                <i class='bx bxl-twitter bx-sm'></i>
+                <p>Twitter</p>
+
+            </div>
+        </div>
+        <div class="second-box">
+            <div class="linked-box">
+                <i class='bx bxl-linkedin-square bx-sm'></i>
+                <p>Linkedin</p>
+
+            </div>
+            <div class="insta-box">
+                <i class='bx bxl-instagram-alt bx-sm'></i>
+                <p>Instagram</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
