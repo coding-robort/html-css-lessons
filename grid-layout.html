@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+
+        }
+
+        .main-box {
+            width: 500px;
+            height: 600px;
+            background-color: rgb(0, 0, 0);
+            margin: auto;
+            margin-top: 100px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .main-box img {
+            width: 350px;
+            align-self: center;
+        }
+
+        .main-box input {
+            padding: 15px;
+            align-self: center;
+            border-radius: 20px;
+            border: none;
+            width: 100%;
+        }
+
+        .main-box .items-box {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .main-box .items-box i {
+            background-color: rgba(255, 255, 255, 0.475);
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        .main-box .items-box p {
+            padding: 8px;
+            border-radius: 20px;
+            background-color: white;
+            /* width: fit-content; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-box">
+        <img src="images/logo.png" alt="logo">
+        <input type="text" placeholder="Search google or type a URL">
+
+        <div class="items-box">
+
+            <div class="icon-text-box">
+                <i class='bx bxs-sushi bx-md'></i>
+                <p>coding180</p>
+            </div>
+            <div class="icon-text-box">
+                <i class='bx bxs-sushi bx-md'></i>
+                <p>coding180</p>
+            </div>
+            <div class="icon-text-box">
+                <i class='bx bxs-sushi bx-md'></i>
+                <p>coding180</p>
+            </div>
+            <div class="icon-text-box">
+                <i class='bx bxs-sushi bx-md'></i>
+                <p>coding180</p>
+            </div>
+            <div class="icon-text-box">
+                <i class='bx bxs-sushi bx-md'></i>
+                <p>coding180</p>
+            </div>
+            <div class="icon-text-box">
+                <i class='bx bxs-sushi bx-md'></i>
+                <p>coding180</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
